@@ -87,3 +87,4 @@ endmodule
 
 **Result:**
 
+hence, the design of half adder and half subtractor circuit studied and its truth table is verified in Quartus using Verilog programming.
