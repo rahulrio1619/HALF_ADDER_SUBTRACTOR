@@ -1,3 +1,7 @@
+NAME: RAHUL RIO S
+
+DATE: 20/11/2024
+
 # HALF_ADDER_SUBTRACTOR
 
 Implementation-of-Half-Adder-and-Half Subtractor-circuit
@@ -50,12 +54,36 @@ Figure -02 HALF Subtractor
 
 **Program:**
 
-/* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
+module halfaddsub(a,b,sum,cout,diff,borr);
 
-Developed by: RegisterNumber:*/
+input a,b;
+
+output sum,cout,diff,borr;
+
+xor g1(sum,a,b);
+
+and g2(cout,a,b);
+
+wire w1;
+
+xor g3(diff,a,b);
+
+not g4(w1,a);
+
+and g5(borr,w1,b);
+
+endmodule 
 
 **RTL Schematic**
 
+
+<img width="736" alt="Screenshot 2024-11-22 123519" src="https://github.com/user-attachments/assets/ff5e017c-d02b-4758-8c19-807bf6ef499e">
+
+
 **Output/TIMING Waveform**
 
+<img width="960" alt="Screenshot 2024-11-22 123811" src="https://github.com/user-attachments/assets/bb91ec5e-295f-4165-b9e0-2161797354ff">
+
+
 **Result:**
+
