@@ -39,6 +39,14 @@ Figure -02 HALF Subtractor
 
 **Truthtable**
 
+**Half Adder**
+
+![ha truthtable](https://github.com/user-attachments/assets/e645e07f-f76b-498c-96d3-34508f909ba4)
+
+**Half Subtractor**
+
+![hs_truthtable](https://github.com/user-attachments/assets/ce483827-8f26-4ab8-b45e-4901325db982)
+
 **Procedure**
 
 1.	Type the program in Quartus software.
@@ -53,7 +61,7 @@ Figure -02 HALF Subtractor
 
 
 **Program:**
-
+```
 module halfaddsub(a,b,sum,cout,diff,borr);
 
 input a,b;
@@ -72,7 +80,8 @@ not g4(w1,a);
 
 and g5(borr,w1,b);
 
-endmodule 
+endmodule
+```
 
 **RTL Schematic**
 
